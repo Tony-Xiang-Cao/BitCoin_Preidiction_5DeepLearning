@@ -6,7 +6,7 @@ Xiang Cao
 
 **Date:** 23-Apr-2021
 
-## Project Executive Summary: 
+## Project Summary: 
 In this project, We compared 5 different deep learning models for prediction of Bitcoin Price. Those 5 models are mostly Recurrent Neural Network based that specialize in predicting sequential time series data. The original Bitcoin dataset is collected over the period from 2013-10-01 to 2020-10-09 with a total of 2556 samples and 16 features that tracks Bitcoin and financial market changes over time. We added a look back window of 20 days to the Bitcoin dataset and constructed a 3-dimensional time series data with temporal dimension to predict Bitcoin price on the 21st day. We evaluate 5 deep learning models on the dataset: **LSTM, RNN, WaveNet, Sequence-to-sequence LSTM and GRU+CNN**. Among those 5 models, the LSTM, RNN, and WaveNet are sequenc-to-vector models that output 1 prediction, while the other 2 models are sequqnce-to-sequence models that output a sequence of 4 predictions at each time step. 
 
 We also did feature engineering by adding additional 8 different features including 5 Commodity Futures (COT) features and 3 related stock price features(Ticker: QQQ, FINX, RIOT). We compare the performance before and after adding the additioanl 8 features and found most deep learning model perform better with more related features. CAGR and Sharpe ratio is calculated with an only-long trading strategy based on the model prediction. After calculating White's reality check, most of the result have a p-value less than 0.1 threshold and we thus reject the null hypothesis and accept the model prediction.
