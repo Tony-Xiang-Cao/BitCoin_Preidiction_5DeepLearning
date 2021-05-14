@@ -1,5 +1,5 @@
 # Bitcoin Prediction with 5 Deep Learning Models
-## APS 1052 Final Project 2021 Spring
+
  **Author:**
 
 Xiang Cao
